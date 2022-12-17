@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------- TAB TITLE ------->
+    <title>HOME ― art-portfolio</title>
+
+    <!------- LINKS ------->
+
+    <!-- CSS fil -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="iphone.css">
+
+    <!-- JS library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>  
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@300;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- JS code -->
+    <script src="code.js"></script>
+</head>
+
+<body>
+    <!-- Background texture -->
+    <div class="paperOverlay"></div>
+
+    <!---------- HEADER ------------>
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <a href="home.html"><img src="img/logo.png" alt="art logo"></a>
+        </div>
+
+        <div class="header-title">
+            <h1>My Online Portfolio</h1>
+            <h2>Copenhagen, DK</h2>
+        </div>
+
+        <!-- navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="about.html">about me</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="process.html">design process</a></li>
+            </ul>
+        </nav>
+
+        <!-- menu icon -->
+        <label id="menu">
+            <img src="img/down-arrow.png" alt="">
+        </label>
+    </header>
+
+    <!------------ ALL CONTENT ------------>
+    <div class="content">
+
+        <!---------- TOP DISPLAY CONTENT ------------>
+        <div class="top-display">
+            <!-- cphbusiness display -->
+            <div id="td1" class="td">
+                <img src="img/cphb.jpg" alt="">
+                <h1>Cphbusiness</h1>
+                <p>Everything I've made and learned at CphBusiness.</p>
+            </div>
+            <div class="vert-line"></div>
+            <!-- attention display -->
+            <div id="td2" class="td">
+                <h1>Everything!</h1>
+                <p>I've ever made, can be found here.</p>
+            </div>
+            <div class="vert-line"></div>
+            <!-- personal work display -->
+            <div id="td3" class="td">
+                <img src="img/personal.png" alt="">
+                <h1>Personal work</h1>
+                <p>Some of my personal work, such as drawings and photography.</p>
+            </div>
+        </div>
+
+        <!---------- NAME BOX ------------>
+        <div class="name-box">
+            <h1>Anya</h1>
+        </div>
+
+        <!---------- MIDDLE DISPLAY CONTENT ------------>
+        <div class="middle-display">
+            <!-- short about me display -->
+            <div id="md1" class="md">
+                <h1>Multimedia <br> designer</h1>
+                <img src="img/me.jpg" alt="">
+                <p><strong>Name:</strong> Anya Tandrup <br>
+                <strong>Birth:</strong> 14/08/2001</p>
+            </div>
+
+            <!-- intro video display -->
+            <div id="md2" class="md">
+                <video src="#"></video>
+                <p>Above is a short introduction video, to get to know me better.</p>
+            </div>
+        </div>
+
+         <!---------- PROJECTS DISPLAY ------------>
+         <div class="project-title">
+            <h1>Projects</h1> 
+        </div>
+         <div class="projects-display">           
+            <div id="pd1" class="pd">
+                <h2>All</h2>
+            </div>
+
+            <div id="pd2" class="pd">
+                <h2>Photoshop</h2>
+            </div>
+
+            <div id="pd3" class="pd">
+                <h2>Drawings</h2>
+            </div>
+
+            <div id="pd4" class="pd">
+                <h2>Photography</h2>
+            </div>
+         </div>
+         
+        <!---------- SCROLLING BANNER ------------>
+        <marquee scrollamount="30">
+            Let's make wonders together
+
+            <a href="mailto:anya.r.tandrup@gmail.com" method="get" target="_blank">Email me</a>
+
+            Let's make wonders together
+
+            <a href="mailto:anya.r.tandrup@gmail.com" method="get" target="_blank">Email me</a>
+        </marquee>
+    </div>
+    
+    <!---------- FOOTER ------------>
+    <footer>
+        <div class="footbox-1">
+            <h2>art-portfolio</h2>
+        </div>
+
+        <div class="footbox-2">
+            <a href="https://www.linkedin.com/in/anya-rezanova-tandrup-421106150/" target="_blank">
+                <i class="fa fa-linkedin-square" style="font-size:50px"></i>
+            </a>
+            
+            <i class="fa fa-circle" style="font-size:20px"></i>
+
+            <a href="https://www.instagram.com/anyart_5/" target="_blank">
+                <i class="fa fa-instagram" style="font-size:50px"></i>
+            </a>
+
+            <i class="fa fa-circle" style="font-size:20px"></i>
+
+            <a href="https://www.fiverr.com/thenameisart?public_mode=true" target="_blank">
+                <img src="img/icons8-fiverr-48.png">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

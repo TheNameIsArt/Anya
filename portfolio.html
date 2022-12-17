@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PORTFOLIO ― art-portfolio</title>
+
+    <!------- LINKS ------->
+
+    <!-- CSS fil -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- js library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>  
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@300;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Background texture -->
+    <div class="paperOverlay"></div>
+
+    <!---------- HEADER ------------>
+    <header>
+        <div class="paperOverlay"></div>
+
+        <!-- logo -->
+        <div class="logo">
+            <a href="home.html"><img src="img/logo.png" alt="art logo"></a>
+        </div>
+
+        <div class="header-title">
+            <h1>My Online Portfolio</h1>
+            <h2>Copenhagen, DK</h2>
+        </div>
+
+        <!-- navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="about.html">about me</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="process.html">design process</a></li>
+            </ul>
+        </nav>
+
+        <!-- menu icon -->
+        <label id="menu">
+            <img src="img/down-arrow.png" alt="">
+        </label>
+    </header>
+
+    <div class="content">
+
+        <!---------- TOP DISPLAY CONTENT ------------>
+        <div class="tp-txt">
+            <h1>Top projects</h1>
+        </div>
+        <div class="top-projects">
+            <div class="tp" id="tp1"></div>
+            <div class="tp" id="tp2"></div>
+            <div class="tp" id="tp3"></div>
+        </div>
+
+        <div class="bottom-projects">
+            <div class="tabs">
+                <button class="tab-links" onclick="openPage(event, 'All')">All</button>
+                <button class="tab-links" onclick="openPage(event, 'Study projects')">Study projects</button>
+                <button class="tab-links" onclick="openPage(event, 'Persanol projects')">Persanol projects</button>
+            </div>
+
+            <div class="tab-content" id="All">1</div>
+            <div class="tab-content" id="Study projects">2</div>
+            <div class="tab-content" id="Persanol projects">3</div>
+        </div>
+    </div>
+    
+    <!---------- FOOTER ------------>
+    <footer>
+        <div class="footbox-1">
+            <h2>art-portfolio</h2>
+        </div>
+
+        <div class="footbox-2">
+            <a href="https://www.linkedin.com/in/anya-rezanova-tandrup-421106150/" target="_blank">
+                <i class="fa fa-linkedin-square" style="font-size:50px"></i>
+            </a>
+            
+            <i class="fa fa-circle" style="font-size:24px"></i>
+
+            <a href="https://www.instagram.com/anyart_5/" target="_blank">
+                <i class="fa fa-instagram" style="font-size:50px"></i>
+            </a>
+
+            <i class="fa fa-circle" style="font-size:24px"></i>
+
+            <a href="https://www.fiverr.com/thenameisart?public_mode=true" target="_blank">
+                <img src="/img/icons8-fiverr-48.png">
+            </a>
+        </div>
+    </footer>
+   
+
+
+    
+</body>
+
+<!------------------ JAVASCRIPT ------------------>
+
+    <!-- Kode til menu knap -->
+    <script>
+        $(document).ready(function()
+        {
+            // Når man klikker på #icon 
+            $('#icon').click(function()
+            {
+                // Skal 'ul' vises
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+
+    <script>
+        function openPage(evt, pageName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tab-links");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(pageName).style.display = "block";
+        evt.currentTarget.className += " active";
+}
+    </script>
+</html>

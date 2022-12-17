@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DESIGN PROCESS ― art-portfolio</title>
+
+    <!-- Linker til min css fil -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link til ikoner -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+    <!-- Importerer Javascript bibliotk -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>  
+
+    <!-- Menu font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Center font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    <!-- Default font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!---------- Header ---------->
+    <header id="header">
+        <div class="logo-port">
+            <a href="home.html">
+            <img src="img/art-logo.png" alt="art logo">
+            </a>
+        </div>
+
+        <div class="head-txt">
+            <ul>
+                <li><a href="#">ProInvent</a></li>
+                <li><a href="#">CphBusiness</a></li>
+                <li><a href="#">Other</a></li>
+            </ul>
+        </div>
+
+         <!-- Navigation -->
+         <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="about.html">about me</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="process.html">design process</a></li>
+            </ul>
+        </nav>
+
+        <label id="icon">
+            <i class="fa fa-bars"></i>
+        </label>
+    </header>
+
+    <!---------- Top content ---------->
+    <section class="top-txt">
+        
+    </section>
+
+    <!---------- IMAGE BACKGROUND ---------->
+    <div id="id1" class="img"></div>
+
+    
+</body>
+
+<!------------------ JAVASCRIPT ------------------>
+
+    <!-- Kode til at header udvider sig når man scroller -->
+    <script>
+        function resizeHeaderOnScroll() {
+            const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            // Sætter værdi for hvornår på siden den skal ændre sig
+            expandOn = 50,
+            // Henter vores "header" og kalder den "Header"
+            Header = document.getElementById('header');
+            
+            // Hvis "distanceY" er større end expandOn, skal "header.expand" tilføjes (fra css)
+            if (distanceY > expandOn) {
+                Header.classList.add("expand");
+                // ellers skal den fjernes
+            } else {
+                Header.classList.remove("expand");
+            }
+        }
+        // Funktion der gør at header kan ændre sig på scroll
+        window.addEventListener('scroll', resizeHeaderOnScroll);
+    </script>
+
+    <!-- Kode til menu knap -->
+    <script>
+        $(document).ready(function()
+        {
+            // Når man klikker på #icon 
+            $('#icon').click(function()
+            {
+                // Skal 'ul' vises
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+</html>

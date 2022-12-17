@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>SCHOOL ― art-portfolio</title>
+    
+        <!-- Linker til min css fil -->
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- Link til ikoner -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        
+        <!-- Importerer Javascript bibliotk -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>  
+    
+        <!-- Menu font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap" rel="stylesheet">
+    
+        <!-- Center font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    
+        <!-- Default font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <!---------- Header ---------->
+    <header id="header">
+        <div class="logo-port">
+            <a href="home.html">
+            <img src="img/art-logo.png" alt="art logo">
+            </a>
+        </div>
+
+        <div class="head-txt">
+            <ul>
+                <li><a href="#">ProInvent</a></li>
+                <li><a href="#">CphBusiness</a></li>
+                <li><a href="#">Other</a></li>
+            </ul>
+        </div>
+
+         <!-- Navigation -->
+         <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="about.html">about me</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="process.html">design process</a></li>
+            </ul>
+        </nav>
+
+        <label id="icon">
+            <i class="fa fa-bars"></i>
+        </label>
+    </header>
+
+    <!---------- Top content ---------->
+    <section class="top-txt">
+        
+    </section>
+
+    <!---------- IMAGE BACKGROUND ---------->
+    <div id="id1" class="img"></div>
+    
+    <!---------- CONTENT ---------->
+    <section  class="container">
+        <div class="cphb">
+            <h1>Cphbusiness</h1>
+            <p>
+                I am currently studying at Cphbusiness, where I study Multimedia design.
+                This education is divided into four semesters. Every semester contains four so called "flows", and every flow has a different theme. 
+            </p>
+        </div>
+
+        <div class="semester">
+            <!---------- First semester ---------->
+            <div class="sem">
+                <h2>Semesters</h2>
+                <h1>01</h1>
+
+                <a href="#">Digital image processing and website prototype</a>
+
+                <em>Adobe Photoshop & Figma</em>
+
+                <p>
+                    I learned how to manipulate picture in Adobe Photoshop by removing andadding elements, adjusting the brightness or giving the image filters,and how to adjust the image size with crop, orientation and format size
+                </p>
+                <p>
+                    In Figma I learned how to make a website prototype. How to style andsize each page, how to go from page to another and how to turn items intocomponents.
+                </p>
+                <hr size="100" color="black"/>
+            </div>
+
+            <!---------- Second semester ---------->
+            <div class="sem">
+                <h1>02</h1>
+
+                <a href="#">Visual concept for digital and printed media</a>
+
+                <em>Adobe Illustrator & Figma</em>
+
+                <p>
+                    I learned how to draw and create elements in Adobe Illustrator. How to trace an image, and genrally using the different tools available.
+                </p>
+                <p>
+                    In Figma I learned how to make a landingpage and how to add animations. Also how to make scoll buttons.
+                </p>
+                <hr size="100" color="black"/>
+            </div>
+
+            <!---------- Third semester ---------->
+            <div class="sem">
+                <h1>03</h1>
+
+                <a href="#">Build your first website</a>
+
+                <em>HTML & CSS</em>
+
+                <p>
+                    I learned basic HTML and CSS, and how to build a website. Also how to make a website suitable to different size screens, like desctop and mobile, and how to always do "mobile first".
+                </p>
+
+                <hr size="100" color="black" />
+            </div>
+
+            <!----------Fourth semester ---------->
+            <div class="sem">
+                <h1>04</h1>
+
+                <a href="#">SoMe video production</a>
+
+                <em>???</em>
+
+                <p>
+                    ???
+                </p>
+
+                <p>
+                    ???
+                </p> 
+            </div>
+        </div>
+    </section>
+</body>
+
+<!------------------ JAVASCRIPT ------------------>
+
+    <!-- Kode til at header udvider sig når man scroller -->
+    <script>
+        function resizeHeaderOnScroll() {
+            const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            // Sætter værdi for hvornår på siden den skal ændre sig
+            expandOn = 50,
+            // Henter vores "header" og kalder den "Header"
+            Header = document.getElementById('header');
+            
+            // Hvis "distanceY" er større end expandOn, skal "header.expand" tilføjes (fra css)
+            if (distanceY > expandOn) {
+                Header.classList.add("expand");
+                // ellers skal den fjernes
+            } else {
+                Header.classList.remove("expand");
+            }
+        }
+        // Funktion der gør at header kan ændre sig på scroll
+        window.addEventListener('scroll', resizeHeaderOnScroll);
+    </script>
+
+    <!-- Kode til menu knap -->
+    <script>
+        $(document).ready(function()
+        {
+            // Når man klikker på #icon 
+            $('#icon').click(function()
+            {
+                // Skal 'ul' vises
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+</html>
