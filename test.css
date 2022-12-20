@@ -1,0 +1,177 @@
+/* --------------- ABOUT ME PAGE ----------------- */
+    /* Top grid */
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        margin-top: 20px;
+    }
+      
+    .grid-item {
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .grid-item h1 {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+      
+    .item1 {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+        width: 17vw;
+        height: 60vh;
+        background-image: url(img/grid1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item2 {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+        width: 35vw;
+        height: 60vh;
+        margin-left: -19vw;
+        background-image: url(img/grid2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item3 {
+        grid-column: 3 / span 1;
+        grid-row: 1;
+        width: 15vw;
+        height: 60vh;
+        margin-left: -18.6vw;
+        background-image: url(img/grid3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item4 {
+        grid-column: 4 / span 2;
+        grid-row: 1;
+        width: 18.7vw;
+        height: 30vh;
+        background-image: url(img/grid4.jpg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+    }
+
+    .item5 {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+        margin-top: 70vh;
+        width: 17vw;
+        height: 70vh;
+        background-image: url(img/grid5.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item6 {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+        margin-top: 70vh;
+        width: 30vh;
+        height: 80vh;
+        margin-left: -54vh;
+        background-image: url(img/grid6.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item7 {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+        margin-top: 70vh;
+        margin-left: -5vw;
+        width: 21vw;
+        height: 65vh;
+        background-image: url(img/grid7.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item8 {
+        grid-column: 3 / span 1;
+        grid-row: 1;
+        margin-top: 70vh;
+        margin-left: -18.6vw;
+        width: 15vw;
+        height: 65vh;
+        background-image: url(img/grid8.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item9 {
+        grid-column: 4 / span 2;
+        grid-row: 1;
+        margin-top: 40vh;
+        width: 18.7vw;
+        height: 100vh;
+        background-image: url(img/grid9.jpg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+    }
+
+    .item10 {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+        margin-top: -5vh;
+        width: 17vw;
+        height: 40vh;
+        background-image: url(img/grid10.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item11 {
+        grid-column: 2 / span 1;
+        grid-row: 2;
+        margin-top: 1vh;
+        width: 30vh;
+        height: 35vh;
+        margin-left: -54vh;
+        background-image: url(img/grid11.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item12 {
+        grid-column: 3 / span 1;
+        grid-row: 2;
+        margin-top: -10vh;
+        margin-left: -43.9vw;
+        width: 40.7vw;
+        height: 40vh;
+        background-image: url(img/grid12.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item13 {
+        width: 18.7vw;
+        height: 40vh;
+        margin-top: 150vh;
+        background-image: url(img/grid13.jpg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+    }
+
+    .item14 {
+        grid-column: 3 / span 1;
+        grid-row: 2;
+        margin-top: 35vh;
+        margin-left: -35vw;
+        width: 13.1em;
+        height: 2em;
+    }
