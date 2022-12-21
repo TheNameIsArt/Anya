@@ -28,7 +28,7 @@ body {
     background-repeat: repeat-y;
     mix-blend-mode: multiply;
     pointer-events: none;
-    background-size: cover;
+    background-size: contain;
     z-index: -1;
 }
 
@@ -40,7 +40,7 @@ nav ul{
     right: -100%;
     text-align: center;
     transition: all .5s;
-    padding-top: 20%;
+    padding-top: 10%;
 }
 
 nav ul.show
