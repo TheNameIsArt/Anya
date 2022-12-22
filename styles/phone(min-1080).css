@@ -1556,4 +1556,151 @@
         background-size: cover;
         border-radius: 10%;
     }
+
+    /* --------------- PROCESS PAGE ----------------- */
+    .old-port h1, .pre-work h1, .design-explained h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 40px;
+    }
+
+    .old-port p, .pre-work p, .design-explained p {
+        margin: 20px 50px 0 50px;
+        padding: 10px;
+        background-color: #ffcbc89f;
+    }
+
+    .moodboard-img {
+        width: 65vw;
+        height: 60vh;
+        margin-left: 15%;
+        margin-top: 20px;
+        background-image: url(../div/moodboard.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .old-port-img {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .old-wireframe1 {
+        width: 30vw;
+        height: 40vh;
+        margin-top: 20px;
+        background-image: url(../img/old-wireframe1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .old-wireframe2 {
+        width: 50vw;
+        height: 40vh;
+        margin-left: 30px;
+        margin-top: 20px;
+        background-image: url(../img/old-wireframe2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .new-port-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .new-port-img h2{
+        text-align: center;
+    }
+
+    .new-wireframe1 {
+        width: 40vw;
+        height: 65vh;
+        margin-top: 20px;
+        background-image: url(../img/new-wireframe1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .new-wireframe2 {
+        width: 40vw;
+        height: 65vh;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/new-wireframe2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .new-wireframe3 {
+        width: 40vw;
+        height: 65vh;;
+        margin-top: 20px;
+        background-image: url(../img/new-wireframe3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .new-wireframe4 {
+        width: 40vw;
+        height: 65vh;
+        margin-top: 20px;
+        margin-left: 20px;                             
+        background-image: url(../img/new-wireframe4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .project-planning-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .pbs-img {
+        width: 35vw;
+        height: 55vh;
+        margin-top: 20px;
+        background-image: url(../img/pbs-img.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .wbs-img {
+        width: 35vw;
+        height: 55vh;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/wbs-img.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .infoarchitecture {
+        width: 40vw;
+        height: 40vh;
+        margin-top: 20px;
+        background-image: url(../img/infoarkitektur.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .style-guide {
+        width: 52vw;
+        height: 40vh;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/style-guide.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .design-explained span {
+        font-size: 30px;
+        font-weight: 600;
+    }
 }

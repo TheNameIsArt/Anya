@@ -6,52 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!------- TAB TITLE ------->
     <title>DESIGN PROCESS ― art-portfolio</title>
 
-    <!-- Linker til min css fil -->
-    <link rel="stylesheet" href="style.css">
+    <!------- LINKS ------->
 
-    <!-- Link til ikoner -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    
-    <!-- Importerer Javascript bibliotk -->
+    <!-- CSS fil -->
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/phone(min-1080).css">
+    <link rel="stylesheet" href="styles/desktop(1500-2000).css">
+    <link rel="stylesheet" href="styles/desktop(2000-2200).css">
+    <link rel="stylesheet" href="styles/desktop(2200-2800).css">
+
+    <!-- JS library -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>  
 
-    <!-- Menu font -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@300;600;700&display=swap" rel="stylesheet">
 
-    <!-- Center font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-
-    <!-- Default font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    
+    
+    <!-- JS code -->
+    <script src="code.js"></script>
 </head>
 
 <body>
-    <!---------- Header ---------->
-    <header id="header">
-        <div class="logo-port">
-            <a href="home.html">
-            <img src="img/art-logo.png" alt="art logo">
-            </a>
+    <!-- Background texture -->
+    <div class="paperOverlay"></div>
+
+    <!---------- HEADER ------------>
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <a href="home.html"><img src="img/logo.png" alt="art logo"></a>
         </div>
 
-        <div class="head-txt">
-            <ul>
-                <li><a href="#">ProInvent</a></li>
-                <li><a href="#">CphBusiness</a></li>
-                <li><a href="#">Other</a></li>
-            </ul>
+        <div class="header-title">
+            <h1>My Online Portfolio</h1>
+            <h2>Copenhagen, DK</h2>
         </div>
 
-         <!-- Navigation -->
-         <nav>
+        <!-- navigation menu -->
+        <nav>
             <ul>
                 <li><a href="home.html">home</a></li>
                 <li><a href="about.html">about me</a></li>
@@ -60,55 +61,123 @@
             </ul>
         </nav>
 
-        <label id="icon">
-            <i class="fa fa-bars"></i>
+        <!-- menu icon -->
+        <label id="menu">
+            <img src="img/down-arrow.png" alt="">
         </label>
     </header>
 
-    <!---------- Top content ---------->
-    <section class="top-txt">
-        
-    </section>
+    <!------------ ALL CONTENT ------------>
+    <div class="content">
+        <div class="old-port">
+            <h1>Welcome to my design process &#128516;</h1>
 
-    <!---------- IMAGE BACKGROUND ---------->
-    <div id="id1" class="img"></div>
+            <p>
+                When I found out we had to make a portfolio website for our exam, I started right away. But at that time I han another idea in mind. I work a lot on this website. But when it got the time where we go the actual description of what the website should contain, I change my mind. I didn't like my old design any more, and I wanted something new. So I erased everything and started from scratch. These two wireframes are from my old design:
+            </p>
+
+            <div class="old-port-img">
+                <div class="old-wireframe1"></div>
+                <div class="old-wireframe2"></div>
+            </div>
+        </div>
+        <div class="pre-work">
+            <h1>Preperation</h1>
+            <p>
+                When I started to work on this portfolio page, the first thing I did was make a list of what the website should contain. Specificly what this page should contain according to the requrements for my exam. 
+                <br><br>
+                Since I decided to start from scratch with my website, I began to make a moodboard, so I could get some inspiration for how I should look like:
+            </p>
+
+            <div class="moodboard-img"></div>
+
+            <p>
+                Now that I had an idea of how my porfolio should like, I started drawing wireframes for my different pages:
+            </p>
+
+            <div class="new-port-img">
+                <div class="new-wireframe1"><h2>Homepage</h2></div>
+                <div class="new-wireframe2"><h2>About me</h2></div>
+                <div class="new-wireframe3"><h2>Portfolio</h2></div>
+                <div class="new-wireframe4"><h2>Procss</h2></div>
+            </div>
+
+            <p>
+                As you may have noticed, the "about me" page and the "portfolio" page, look a bit different then I originally meant for it. The gid in the about me page was too complicated to get to fit right on multiple platforms (phone, desktop, etc.), so I ended up changeing it. My original idea for the portfolio page didn't turn out as I thought as soon as I started making it. I therefore got the idea with making tabs, so it was easier to navigate about.
+            </p>
+
+            <h1>Project planning</h1>
+            <p>
+                During the entire project, I have timed each part, so to document how much it takes to make. All this is documented throught a PBS and WBS:
+            </p>
+
+            <div class="project-planning-img">
+                <div class="pbs-img"></div>
+                <div class="wbs-img"></div>
+            </div>
+
+            <p>
+                I could now create an information architecture and a style guide:
+            </p>
+
+            <div class="project-planning-img">
+                <div class="infoarchitecture"></div>
+                <div class="style-guide"></div>
+            </div>
+
+            <div class="design-explained">
+                <h1>Website design explained</h1>
+                <p>
+                    <span>Moodboard</span> <br>
+
+                    One of the first things that I wanted to change about my website, was the background. In my moodboard I have a picture from <a href="https://pernillelind.dk/">Pernille Linds</a> website. Her background inspired me to make one of my own. <br><br>
+
+                    When I was younger (and still) I really liked coloring mandalas. I've always found them quite beautiful, and thats why I chose to draw a mandala for my background. <br><br>
+
+                    I found inspiration online an traced it in Adobe Illustrator, and gave it a color that worked well with the other background I already had. <br><br>
+
+                    The other background I have has a paperlike texture. That inspiration came from <a href="https://www.niccolomiranda.com/">Miranda paper portfolio</a>. I really liked how she made her portfolio look like newspaper, and chose to make something similar for my homepage. I took this paper texture and combined it with my mandala, and that is what you can see on every page. <br><br>
+
+                    <span>AIDA</span><br>
+                    One thing I really liked from Mirandas page, was the scrollable text she had at the bootom of her front page (marquee tag in html). It captures the users <strong>attention</strong> and make them <strong>interested</strong> in what's to come. <br><br>
+
+                    By having an About Me page, it helps tell people more about who they are dealing with. Createting a <strong>desire</strong> for the user to work with out. In my About Me page a also have a contact box. It gives the user the possibility to take <strong>action</strong> and contact me. <br><br>
+
+                    <span>CRAP</span><br>
+                    <strong>Contrast:</strong><br>
+                    My website is build on a hierarchy. For example by writing in the order of h1, h2, h3, p in HTML. That way, the biggest and boldest text is always on top.
+                </p>
+            </div>
+            
+        </div>
+    </div>
 
     
+
+    <!---------- FOOTER ------------>
+    <footer>
+        <div class="footbox-1">
+            <h2>art-portfolio</h2>
+        </div>
+
+        <div class="footbox-2">
+            <a href="https://www.linkedin.com/in/anya-rezanova-tandrup-421106150/" target="_blank">
+                <i class="fa fa-linkedin-square" style="font-size:50px"></i>
+            </a>
+            
+            <i class="fa fa-circle" style="font-size:24px"></i>
+
+            <a href="https://www.instagram.com/anyart_5/" target="_blank">
+                <i class="fa fa-instagram" style="font-size:50px"></i>
+            </a>
+
+            <i class="fa fa-circle" style="font-size:24px"></i>
+
+            <a href="https://www.fiverr.com/thenameisart?public_mode=true" target="_blank">
+                <img src="/img/icons8-fiverr-48.png">
+            </a>
+        </div>
+    </footer>
 </body>
 
-<!------------------ JAVASCRIPT ------------------>
-
-    <!-- Kode til at header udvider sig når man scroller -->
-    <script>
-        function resizeHeaderOnScroll() {
-            const distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            // Sætter værdi for hvornår på siden den skal ændre sig
-            expandOn = 50,
-            // Henter vores "header" og kalder den "Header"
-            Header = document.getElementById('header');
-            
-            // Hvis "distanceY" er større end expandOn, skal "header.expand" tilføjes (fra css)
-            if (distanceY > expandOn) {
-                Header.classList.add("expand");
-                // ellers skal den fjernes
-            } else {
-                Header.classList.remove("expand");
-            }
-        }
-        // Funktion der gør at header kan ændre sig på scroll
-        window.addEventListener('scroll', resizeHeaderOnScroll);
-    </script>
-
-    <!-- Kode til menu knap -->
-    <script>
-        $(document).ready(function()
-        {
-            // Når man klikker på #icon 
-            $('#icon').click(function()
-            {
-                // Skal 'ul' vises
-                $('ul').toggleClass('show');
-            });
-        });
-    </script>
 </html>
