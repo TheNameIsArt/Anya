@@ -1,16 +1,16 @@
 /* ---------------------- MEDIA: DESKTOP  -------------------------*/
-@media screen and (min-width: 2000px) and (max-width: 2200px) {
+@media screen and (min-width: 2200px) and (max-width: 2800px) {
     /* --------------- ALL PAGES ----------------- */
 
     /* logo */
     .logo {
         width: 10%;
-        margin: 30px 100px;
+        margin: 20px 100px;
     }
 
     .logo img {
         height: auto;
-        width: 60%;
+        width: 45%;
     }
 
     /* header title */
@@ -75,7 +75,7 @@
     /* menu icon */
     header #menu {
         display: block;
-        margin: 4% 0;
+        margin: 2.5% 0;
         cursor: pointer;
         margin-left: 200px;
         transition: .3s;
@@ -383,7 +383,7 @@
 
     .img-of-me1 {
         width: 35vw;
-        height: 40vh;
+        height: 50vh;
         margin: 40px 10px 0 10px;
         background-image: url(../img/grid1.jpg);
         background-position: center;
@@ -392,7 +392,7 @@
 
     .img-of-me2 {
         width: 35vw;
-        height: 40vh;
+        height: 50vh;
         margin: 40px 10px 0 10px;
         background-image: url(../img/grid3.jpg);
         background-position: center;
@@ -401,7 +401,7 @@
 
     .img-of-me3 {
         width: 35vw;
-        height: 40vh;
+        height: 50vh;
         margin: 40px 10px 0 10px;
         background-image: url(../img/grid8.jpg);
         background-position: center;
@@ -410,7 +410,7 @@
 
     .img-of-me4 {
         width: 35vw;
-        height: 40vh;
+        height: 50vh;
         margin: 40px 10px 0 10px;
         background-image: url(../img/grid7.jpg);
         background-position: center;
@@ -471,7 +471,7 @@
         padding: 12px;
         border-radius: 5px;
         box-sizing: border-box;
-        margin: 10px 22em;
+        margin: 10px 28em;
         resize: vertical;
         background-color: #de5b6ddc;
         font-size: 20px;
@@ -481,7 +481,7 @@
         background-color: #478ba2;
         color: white;
         padding: 12px 20px;
-        margin: 30px 47%;
+        margin: 30px 48%;
         border: none;
         border-radius: 4px;
         cursor: pointer;

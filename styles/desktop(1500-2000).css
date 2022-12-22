@@ -376,181 +376,44 @@
     }
 
     /* --------------- ABOUT ME PAGE ----------------- */
-    /* Top grid */
-    .grid-container {
-        display: grid;
-        gap: 10px;
-        margin-top: 20px;
-    }
-      
-    .grid-item {
-        text-align: center;
-        padding: 20px;
-        font-size: 30px;
+    .about-me {
+        display: flex;
     }
 
-    .grid-item h1 {
-        font-size: 40px;
-        margin-top: 20px;
-    }
-      
-    .item1 {
-        grid-column: 1 / span 1;
-        grid-row: 1;
-        width: 17vw;
-        height: 30vh;
-        background-image: url(img/grid1.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .item2 {
-        grid-column: 2 / span 1;
-        grid-row: 1;
+    .img-of-me1 {
         width: 35vw;
-        height: 30vh;
-        margin-left: -20vw;
-        background-image: url(img/grid2.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .item3 {
-        grid-column: 3 / span 1;
-        grid-row: 1;
-        width: 15vw;
-        height: 30vh;
-        margin-left: -20vw;
-        background-image: url(img/grid3.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .item4 {
-        grid-column: 4 / span 2;
-        grid-row: 1;
-        width: 18.7vw;
-        height: 15vh;
-        background-image: url(img/grid4.jpg);
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        right: 0;
-    }
-
-    .item5 {
-        grid-column: 1 / span 1;
-        grid-row: 1;
-        margin-top: 35vh;
-        width: 17vw;
-        height: 35vh;
-        background-image: url(img/grid5.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .item6 {
-        grid-column: 2 / span 1;
-        grid-row: 1;
-        margin-top: 35vh;
-        width: 15vh;
-        height: 38vh;
-        margin-left: -25vh;
-        background-image: url(img/grid6.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .item7 {
-        grid-column: 2 / span 1;
-        grid-row: 1;
-        margin-top: 35vh;
-        margin-left: -4vw;
-        width: 21vw;
-        height: 18vh;
-        background-image: url(img/grid7.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .item8 {
-        grid-column: 3 / span 1;
-        grid-row: 1;
-        margin-top: 35vh;
-        margin-left: -19.5vw;
-        width: 15vw;
-        height: 18vh;
-        background-image: url(img/grid8.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .item9 {
-        grid-column: 4 / span 2;
-        grid-row: 1;
-        margin-top: 20vh;
-        width: 18.7vw;
         height: 40vh;
-        background-image: url(img/grid9.jpg);
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        right: 0;
-    }
-
-    .item10 {
-        grid-column: 1 / span 1;
-        grid-row: 2;
-        margin-top: -2vh;
-        width: 17vw;
-        height: 28vh;
-        background-image: url(img/grid10.jpg);
+        margin: 40px 10px 0 10px;
+        background-image: url(../img/grid1.jpg);
         background-position: center;
         background-size: cover;
     }
 
-    .item11 {
-        grid-column: 2 / span 1;
-        grid-row: 2;
-        margin-top: 1vh;
-        width: 15vh;
-        height: 23vh;
-        margin-left: -25vh;
-        background-image: url(img/grid11.jpg);
+    .img-of-me2 {
+        width: 35vw;
+        height: 40vh;
+        margin: 40px 10px 0 10px;
+        background-image: url(../img/grid3.jpg);
         background-position: center;
         background-size: cover;
     }
 
-    .item12 {
-        grid-column: 3 / span 1;
-        grid-row: 2;
-        margin-top: -19vh;
-        margin-left: -44.4vw;
-        width: 39vw;
-        height: 30vh;
-        background-image: url(img/grid12.jpg);
+    .img-of-me3 {
+        width: 35vw;
+        height: 40vh;
+        margin: 40px 10px 0 10px;
+        background-image: url(../img/grid8.jpg);
         background-position: center;
         background-size: cover;
     }
 
-    .item13 {
-        width: 18.7vw;
-        height: 30vh;
-        margin-top: 65vh;
-        background-image: url(img/grid13.jpg);
+    .img-of-me4 {
+        width: 35vw;
+        height: 40vh;
+        margin: 40px 10px 0 10px;
+        background-image: url(../img/grid7.jpg);
         background-position: center;
         background-size: cover;
-        position: absolute;
-        right: 0;
-    }
-
-    .item14 {
-        grid-column: 3 / span 1;
-        grid-row: 2;
-        margin-top: 15vh;
-        margin-left: -35vw;
-        width: 13.1em;
-        height: 2em;
     }
 
     /* Bottom content */
@@ -622,5 +485,1093 @@
         border-radius: 4px;
         cursor: pointer;
         font-size: 20px;
+    }
+
+    /* --------------- PORTFOLIO PAGE ----------------- */
+    .top-projects {
+        width: 95%;
+        background-color: #dc8765de;
+        margin: 70px 50px 0 50px;
+    }
+
+    .tabs {
+        overflow: hidden;
+    }
+    
+    .tabs button {
+        font-family: inherit;
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 35px;
+    }
+    
+    .tabs button.active {
+        background-color: #b9d4db;
+    }
+
+    .tab-content {
+        display: none;
+        font-size: 30px;
+        padding: 6px 12px;
+        border-top: #b9d4db 2px solid;
+    }    
+
+    /* Sub tabs */
+    .tab-radio {
+        display: none;
+      }
+
+    .sub-tab {
+        overflow: hidden;
+    }
+
+    .sub-tab-content, .tab-content {
+    display: none;
+    }
+
+    .tab-radio:checked + .tab-content,
+    .tab-radio:checked + .sub-tab-content {
+    display: block;
+    }
+
+    .sub-tabs-container {
+        margin-top: 40px;
+    }
+    
+    .sub-tabs-container label {
+        cursor: pointer;
+        padding: 10px;
+        font-size: 20px;
+        margin-left: 14%;
+        color: #030700;
+        min-width: 150px;
+        text-align: center;
+        background-color: #b9d4db;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .sub-tabs-container label:active {
+        color: #37474f;
+        box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .sub-tabs-container label:hover {
+        background-color: #ffccbc;
+    }
+
+    /* To top button */
+    .to-top-btn a{
+        position: fixed;
+        right: 20px;
+        bottom: 50px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    /* CphBusiness projects */
+    #Study-projects h1{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #Study-projects p{
+        text-align: center;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .sem1-links {
+        margin-top: 20px;
+        margin-left: 6%;
+        display: flex;
+        font-weight: 600;
+    }
+
+    .sem1-links a{
+        color: #000;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    .sub-tab-content h1 {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .notbold {
+        font-weight: 600;
+        font-size: 40px;
+    }
+    
+    /* Semester 1 - Flow 1 */
+    .sem1-flow1-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sem1-flow1-img h2{
+        text-align: center;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-top: 16vh;
+        background-color: rgba(255, 255, 255, 0.815);
+    }
+
+    .sem1-flow1-img1 {
+        height: 30vh;
+        width: 20vw;
+        margin-top: 20px;
+        background-image: url(../img/creative.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img2 {
+        height: 30vh;
+        width: 20vw;
+        margin: 20px 35px;
+        background-image: url(../img/polarized.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img3 {
+        height: 30vh;
+        width: 20vw;
+        margin-top: 20px;
+        background-image: url(../img/retro.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sub-tab-content ul{
+        margin-left: 14%;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .sub-tab-content ol{
+        margin-left: 25%;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .sem1-flow1-img4 {
+        height: 30vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 5%;
+        background-image: url(../img/creative2.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img5 {
+        height: 30vh;
+        width: 25vw;
+        margin: 20px 35px;
+        background-image: url(../img/polarized2.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img6 {
+        height: 30vh;
+        width: 25vw;
+        margin-top: 20px;
+        background-image: url(../img/retro2.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img7 {
+        height: 30vh;
+        width: 20vw;
+        margin-top: 20px;
+        margin-left: 14%;
+        background-image: url(../img/love.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img8 {
+        height: 30vh;
+        width: 20vw;
+        margin: 20px 35px;
+        background-image: url(../img/nature.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img9 {
+        height: 30vh;
+        width: 20vw;
+        margin-top: 20px;
+        margin-right: 14%;
+        background-image: url(../img/strong-colors.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img10 {
+        height: 30vh;
+        width: 20vw;
+        margin-top: 20px;
+        background-image: url(../img/reflection.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img11 {
+        height: 30vh;
+        width: 20vw;
+        margin-top: 20px;
+        margin-left: 35px;
+        background-image: url(../img/movement.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img12 {
+        height: 33vh;
+        width: 18vw;
+        margin-top: 20px;
+        background-image: url(../img/sem1-flow1-wireframe1.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img13 {
+        height: 33vh;
+        width: 18vw;
+        margin-top: 20px;
+        margin-left: 25px;
+        background-image: url(../img/sem1-flow1-wireframe2.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img14 {
+        height: 33vh;
+        width: 18vw;
+        margin-top: 20px;
+        margin-left: 25px;
+        background-image: url(../img/sem1-flow1-wireframe3.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img15 {
+        height: 33vh;
+        width: 18vw;
+        margin-top: 20px;
+        margin-left: 25px;
+        background-image: url(../img/sem1-flow1-wireframe4.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img16 {
+        height: 52vh;
+        width: 100vw;
+        margin-top: 20px;
+        background-image: url(../img/sem1-flow1-sitemap.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 2%;
+    }
+
+    .sem1-flow1-img17 {
+        height: 30vh;
+        width: 18vw;
+        margin-top: 20px;
+        background-image: url(../img/putin-before.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow1-img18 {
+        height: 30vh;
+        width: 18vw;
+        margin-top: 20px;
+        margin-left: 35px;
+        background-image: url(../img/putin-after.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* Semester 1 - Flow 2 */
+    .sem1-flow2-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sem1-flow2-img h1{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .sem1-flow2-img1 {
+        height: 40vh;
+        width: 20vw;
+        margin-top: 20px;
+        background-image: url(../img/sem1-flow2-wireframe1.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow2-img2 {
+        height: 40vh;
+        width: 20vw;
+        margin-top: 20px;
+        margin-left: 25px;
+        background-image: url(../img/sem1-flow2-wireframe2.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow2-img3 {
+        height: 40vh;
+        width: 20vw;
+        margin-top: 20px;
+        margin-left: 25px;
+        background-image: url(../img/sem1-flow2-wireframe3.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow2-img4 {
+        height: 40vh;
+        width: 58vw;
+        margin-top: 20px;
+        background-image: url(../img/sem1-flow2-wireframe4.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 2%;
+    }
+
+    .sem1-flow2-img5 {
+        height: 40vh;
+        width: 30vw;
+        margin-top: 20px;
+        background-image: url(../img/sem1-flow2-wireframe5.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .sem1-flow2-img6 {
+        height: 40vh;
+        width: 58vw;
+        margin-top: 20px;
+        background-image: url(../img/sem1-flow2-wireframe6.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 2%;
+    }
+
+    /* Semester 1 - Flow 3 */
+    .sem1-flow4-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sem1-flow4-img1 {
+        height: 60vh;
+        width: 62vw;
+        margin-top: 20px;
+        background-image: url(../img/sem1-flow4-storyboard1.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 2%;
+    }
+
+    .sem1-flow4-img2 {
+        height: 60vh;
+        width: 62vw;
+        margin-top: 20px;
+        background-image: url(../img/sem1-flow4-storyboard2.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 2%;
+    }
+
+    .sem1-flow4-img3 {
+        height: 40vh;
+        width: 100vw;
+        margin-top: 20px;
+        background-image: url(../img/sem1-flow4-shotlist.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 2%;
+    }
+
+    /* Personal projects */
+    #Personal-projects h1{
+        text-align: center;
+        margin-top: 40px;
+        border-bottom: #000 2px solid;
+    }
+
+    #Personal-projects h2{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 40px;
+        font-style: italic;
+    }
+
+    #Personal-projects p{
+        text-align: center;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .personal-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .personal-links {
+        display: flex;
+        font-weight: 600;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .personal-links a{
+        color: #000;
+        padding: 10px 20px;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+
+    .drawings-links {
+        margin-top: 20px;
+        display: flex;
+        font-weight: 600;
+        margin-left: 40px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .drawings-links a{
+        color: #000;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    /* anime and human */
+    .drawngs-img1 {
+        height: 43vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/drawing1.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img2 {
+        height: 43vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/drawing2.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img3 {
+        height: 43vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/drawing3.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img4 {
+        height: 43vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/drawing4.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img5 {
+        height: 43vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/drawing5.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img6 {
+        height: 43vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/drawing6.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img7 {
+        height: 43vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/drawing7.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img8 {
+        height: 43vh;
+        width: 50vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/drawing8.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img9 {
+        height: 43vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/drawing9.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img10 {
+        height: 43vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/drawing10.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img11 {
+        height: 43vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/drawing11.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img12 {
+        height: 55vh;
+        width: 70vw;
+        margin-top: 20px;
+        background-image: url(../img/drawing12.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img13 {
+        height: 43vh;
+        width: 20vw;
+        margin-top: 20px;
+        background-image: url(../img/drawing13.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .drawngs-img14 {
+        height: 43vh;
+        width: 30vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/drawing14.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* logo and tattoo */
+    .log-tat-img1 {
+        height: 30vh;
+        width: 45vw;
+        margin-top: 20px;
+        background-image: url(../img/log-tat1.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .log-tat-img2 {
+        height: 30vh;
+        width: 40vw;
+        margin-top: 20px;
+        margin-left: 10px;
+        background-image: url(../img/log-tat2.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .log-tat-img3 {
+        height: 30vh;
+        width: 50vw;
+        margin-top: 20px;
+        background-image: url(../img/log-tat3.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .log-tat-img4 {
+        height: 45vh;
+        width: 40vw;
+        margin-top: 20px;
+        background-image: url(../img/log-tat4.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .log-tat-img5 {
+        height: 50vh;
+        width: 38vw;
+        margin-top: 20px;
+        background-image: url(../img/log-tat5.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .log-tat-img6 {
+        height: 50vh;
+        width: 44vw;
+        margin-top: 20px;
+        margin-left: 15px;
+        background-image: url(../img/log-tat6.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .log-tat-img7 {
+        height: 60vh;
+        width: 50vw;
+        margin-top: 20px;
+        background-image: url(../img/log-tat7.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* other drawings */
+    /* rose */
+    .other-img1 {
+        height: 37vh;
+        width: 20vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/other1.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* dark angle */
+    .other-img2 {
+        height: 37vh;
+        width: 35vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/other2.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* skeleton */
+    .other-img3 {
+        height: 37vh;
+        width: 35vw;
+        margin-top: 20px;
+        margin-left: 7%;
+        background-image: url(../img/other3.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* rain man */
+    .other-img4 {
+        height: 40vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/other4.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* don't grow up */
+    .other-img5 {
+        height: 48vh;
+        width: 30vw;
+        margin-top: 20px;
+        margin-left: 7%;
+        background-image: url(../img/other5.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* revoluton */
+    .other-img6 {
+        height: 48vh;
+        width: 40vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/other6.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* eye 1 */
+    .other-img7 {
+        height: 37vh;
+        width: 20vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/other7.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* lips */
+    .other-img8 {
+        height: 37vh;
+        width: 35vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/other8.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* eye 2 */
+    .other-img9 {
+        height: 40vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/other9.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* bb8 */
+    .other-img10 {
+        height: 40vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/other10.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* bornholm */
+    .other-img11 {
+        height: 45vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/other11.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* water */
+    .other-img12 {
+        height: 45vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/other12.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* eye 3 */
+    .other-img13 {
+        height: 45vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/other13.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* paintings */
+    .painting-img1 {
+        height: 45vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 3%;
+        background-image: url(../img/painting1.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .painting-img2 {
+        height: 45vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/painting2.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .painting-img3 {
+        height: 45vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/painting3.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .painting-img4 {
+        height: 60vh;
+        width: 45vw;
+        margin-top: 20px;
+        background-image: url(../img/painting4.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .painting-img5 {
+        height: 60vh;
+        width: 35vw;
+        margin-top: 20px;
+        margin-left: 10px;
+        background-image: url(../img/painting5.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .painting-img6 {
+        height: 40vh;
+        width: 50vw;
+        margin-top: 20px;
+        background-image: url(../img/painting6.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    /* photography */
+    .photo-img1 {
+        height: 37vh;
+        width: 25vw;
+        margin-top: 20px;
+        background-image: url(../img/photo1.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .photo-img2 {
+        height: 37vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/photo2.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .photo-img3 {
+        height: 37vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/photo3.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .photo-img4 {
+        height: 37vh;
+        width: 25vw;
+        margin-top: 20px;
+        background-image: url(../img/photo4.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .photo-img5 {
+        height: 37vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/photo5.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .photo-img6 {
+        height: 37vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/photo6.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .photo-img7 {
+        height: 37vh;
+        width: 25vw;
+        margin-top: 20px;
+        background-image: url(../img/photo7.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .photo-img8 {
+        height: 37vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/photo8.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .photo-img9 {
+        height: 37vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/photo9.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .photo-img10 {
+        height: 37vh;
+        width: 25vw;
+        margin-top: 20px;
+        background-image: url(../img/photo10.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .photo-img11 {
+        height: 37vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/photo11.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
+    }
+
+    .photo-img12 {
+        height: 37vh;
+        width: 25vw;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-image: url(../img/photo12.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10%;
     }
 }

@@ -16,6 +16,17 @@ body {
     src: url(chomsky/Chomsky.otf);
 }
 
+nav ul{
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    background-image: conic-gradient(#f2a490, #de5b6d, #f2a490, #de5b6d, #f2a490);
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+    padding-top: 10%;
+}
+
 .paperOverlay {
     background-image: url("../img/background.png");
     position: absolute;
@@ -31,18 +42,6 @@ body {
     background-size: contain;
     z-index: -1;
 }
-
-nav ul{
-    position: fixed;
-    width: 70%;
-    height: 100%;
-    background-image: conic-gradient(#f2a490, #de5b6d, #f2a490, #de5b6d, #f2a490);
-    right: -100%;
-    text-align: center;
-    transition: all .5s;
-    padding-top: 10%;
-}
-
 nav ul.show
 {
     right: 0;
@@ -62,6 +61,9 @@ header {
     background-color: #FFCBC8;
     max-height: 200px;
 }
+
+
+
 
 
 
