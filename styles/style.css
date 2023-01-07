@@ -1,0 +1,603 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Yrsa', serif;
+    background-color: #cd777298;
+    position: relative;
+}
+
+@font-face {
+    font-family: Chomsky;
+    src: url(../chomsky/Chomsky.otf);
+}
+
+.paperOverlay {
+    background-image: url("../img/background.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-y;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    background-size: contain;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* Sticky gør at header bliver når man scroller */
+    position: sticky;
+    top: 0;
+    /* Når z-index er på 1, så er elementet øverst, og indholdet vil derfor altid opstå bagved headeren */
+    z-index: 1;
+    border-bottom: 1px solid black;
+    background-color: #FFCBC8;
+    max-height: 200px;
+}
+
+/* logo */
+.logo {
+    width: 15%;
+    margin: 30px 25px;
+}
+
+.logo img {
+    height: auto;
+    width: 60px;
+}
+
+/* header title */
+.header-title {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.header-title h1 {
+    font-family: Chomsky;
+    font-size: 30px;
+}
+
+.header-title h2 {
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/* pop-up menu */
+nav ul{
+    position: fixed;
+    margin-top: 12vh;
+    width: 100%;
+    height: 100%;
+    background-color: #534666;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+    padding-top: 10%;
+}
+
+nav ul.show
+{
+    right: 0;
+}
+
+nav li
+{
+    display: block;
+    margin: 50px 0;
+}
+
+nav a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+nav a:hover
+{
+    color: #478ba2;
+}
+
+/* menu icon */
+header #menu {
+    display: block;
+    margin-top: 50px;
+    margin-left: 15vw;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 2;
+}
+
+header #menu img {
+    height: 25px;
+}
+
+/* ---------- FOOTER ------------ */
+footer {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    bottom: 0;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footbox {
+    margin: 10px;
+    display: flex;
+    padding-top: 40px;
+}
+
+.footbox a {
+    text-decoration: none;
+    color: black;
+    margin: 0 40px;
+    font-size: 30px;
+}
+
+.footbox img {
+    margin-top: -3px;
+    width: 35px;
+    height: 35px;
+}
+
+.fa-circle {
+    padding-top: 5px;
+    font-size: 5px;
+}
+
+/* --------------- HOMEPAGE ----------------- */
+/* ---------- CONTENT ------------ */
+.content {
+    margin: 0 2%;
+}
+
+/* top display content */
+.top-display {
+    display: flex;
+    margin-top: 5%;
+    height: 21vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.td {
+    width: 30%;
+    margin: 15px;
+    background-color: #ffcbc89f;
+}
+
+.td img{
+    width: 100%;
+    height: 8vh;
+}
+
+.td h1 {
+    text-transform: uppercase;
+}
+
+#td1 h1, #td3 h1 {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+#td1 p, #td3 p {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+#td2{
+    text-align: center;
+    margin-top: 5vh;
+    padding-top: 2vh;
+    height: 10vh;
+}
+
+#td2 h1 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#td2 p {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.vert-line {
+    border-left: 1px solid black;
+    margin-top: 16px;
+    height: 18.5vh;
+}
+
+/* name box */
+.name-box {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.788);
+    height: 30vw;
+    margin-top: 20px;
+}
+
+.name-box h1 {
+    color: #de5b6d;
+    line-height: 34vw;
+    letter-spacing: -.03em;
+    text-transform: uppercase;
+    font-size: 37vw;
+    text-align: center;
+}
+
+/* middle display content */
+.middle-display{
+    display: flex;
+    margin-top: 20px;
+}
+
+.md {
+    margin: 15px;
+}
+
+#md1 {
+    width: 35%;
+}
+
+#md1 h1{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#md1 img{
+    width: 100%;
+    margin: 10px 0;
+    height: 15vh;
+    border: 1px solid black;
+    background-image: url(img/me-tårn.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#md1 p {
+    font-size: 18px;
+    background-color: #ffcbc89f;
+    padding: 8px;
+}
+
+#md2 {
+    width: 65%;
+    border-left: 1px solid black;
+    padding-left: 15px;
+}
+
+#md2 video {
+    width: 100%;
+}
+
+#md2 p {
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: #ffcbc89f;
+    padding: 8px;
+}
+
+/* projects display */
+.project-title {
+    margin: 30px 0;
+}
+
+.project-title h1 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.project-title h1:before {
+    content: "";
+    display: block;
+    width: 32vw;
+    height: 2px;
+    background: #000;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+    
+.project-title h1:after {
+    content: "";
+    display: block;
+    width: 32vw;
+    height: 2px;
+    background: #000;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.projects-display {
+    display: flex;   
+    margin-top: 20px; 
+    width: 100%;
+    justify-content: center;
+}
+
+.pd {
+    height: 20em;
+    width: 24%;
+    border-radius: 5%;
+}
+
+.pd a {
+    text-decoration: none;
+}
+
+.pd h2 {
+    background-color: #de5b6d;
+    padding: 2px;
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+#pd1 {
+    background-image: url(../img/all.jpg);
+}
+
+#pd2 {
+    background-image: url(../img/photoshop.png);
+}
+
+#pd3 {
+    background-image: url(../img/drawings.jpg);
+}
+
+#pd4 {
+    background-image: url(../img/photography.jpg);
+}
+
+#pd1, #pd2, #pd3 {
+    
+    margin-right: 2%;
+}
+
+#pd1, #pd2, #pd3, #pd4 {
+    background-position: center;
+    background-size: cover;
+}
+
+#pd1:hover, #pd2:hover, #pd3:hover, #pd4:hover {
+    background-color: #534666;
+    cursor: pointer;
+}
+
+/* scrolling banner */
+marquee{
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: 700;
+    width: 100%;
+    height: 55px;
+    text-transform: uppercase;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 30px 0;
+}
+
+marquee a {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 15px 100px;
+    color: black;
+    background-color: #534666;
+    padding: 10px;
+}
+
+/* --------------- ABOUT ME PAGE ----------------- */
+.about-me {
+    display: flex;
+}
+
+.img-of-me1, .img-of-me2, .img-of-me3, .img-of-me4 {
+    width: 25vw;
+    height: 15vh;
+    margin: 50px 10px 0 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-of-me1 {
+    background-image: url(../img/grid1.jpg);
+}
+
+.img-of-me2 {
+    background-image: url(../img/grid3.jpg);
+}
+
+.img-of-me3 {
+    background-image: url(../img/grid8.jpg);
+}
+
+.img-of-me4 {
+    background-image: url(../img/grid7.jpg);
+}
+
+/* Bottom content */
+.information {
+    display: flex;
+    margin-top: 50px;
+}
+    
+.info{
+    width: 50%;
+    height: 105vh;
+    background-color: #ffcbc8c4;
+}
+
+.info h1, .info3 h1, .info4 h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.info p, .info3 p {
+    padding: 20px 15px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.info1 {
+    margin-right: 15px;
+    height: 55vh;
+}
+
+.info2 {
+    margin-left: 15px;
+    height: 55vh;
+}
+
+.info3 {
+    margin-top: 20px;
+    height: 20vh;
+    background-color: #ffcbc8c4;
+}
+
+.info4 p {
+    margin-top: 10px;
+    padding: 20px 45px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.contact{
+    background-color: #ffcbc8c4;
+    margin-top: 20px;
+}
+
+.vert-info-line {
+    border-left: 1px solid black;
+    height: 55vh;
+}
+
+input[type=text], textarea {
+    width: 80%;
+    padding: 12px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 10px 45px;
+    resize: vertical;
+    background-color: #de5b6ddc;
+    font-size: 20px;
+    font-family: 'Yrsa', serif;
+}
+
+input[type=submit] {
+    background-color: #478ba2;
+    color: white;
+    width: 20%;
+    padding: 12px 20px;
+    margin: 20px 38vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Yrsa', serif;
+}
+
+/* --------------- PORTFOLIO PAGE ----------------- */
+.cphbusiness h1 
+{
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cphbusiness h2 
+{
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cphbusiness p {
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: #ffcbc89f;
+    padding: 8px;
+}
+
+.accordion 
+{
+    margin-top: 10px;
+    background-color: #de5b6d;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    font-family: 'Yrsa', serif;
+}
+  
+.active, .accordion:hover 
+{
+    background-color: #478ba2; 
+}
+
+.accordion:after 
+{
+    content: '\02795';
+    font-size: 13px;
+    color: #534666;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after 
+{
+    content: "\2796";
+}
+
+.panel 
+{
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.panel p {
+    padding: 10px;
+}
+
+.panel img {
+    padding: 10px;
+    height: 15vh;
+    margin: 0 5px;
+}

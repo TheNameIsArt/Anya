@@ -12,12 +12,7 @@
     <!------- LINKS ------->
 
     <!-- CSS fil -->
-    <link rel="stylesheet" href="styles/all.css">
-    <link rel="stylesheet" href="styles/phone(min-1080).css">
-    <link rel="stylesheet" href="styles/desktop(1500-2000).css">
-    <link rel="stylesheet" href="styles/desktop(2000-2200).css">
-    <link rel="stylesheet" href="styles/desktop(2200-2800).css">
-
+    <link rel="stylesheet" href="styles/style.css">
 
     <!-- JS library -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>  
@@ -73,7 +68,7 @@
         <div class="top-display">
             <!-- cphbusiness display -->
             <div id="td1" class="td">
-                <img src="img/cphb.jpg" alt="">
+                <img src="img/cphb.jpg" onclick="enlargeOrResetImg(this)">
                 <h1>Cphbusiness</h1>
                 <p>Everything I've made and learned at CphBusiness.</p>
             </div>
@@ -86,7 +81,7 @@
             <div class="vert-line"></div>
             <!-- personal work display -->
             <div id="td3" class="td">
-                <img src="img/personal.png" alt="">
+                <img src="img/personal.png" onclick="enlargeOrResetImg(this)">
                 <h1>Personal work</h1>
                 <p>Some of my personal work, such as drawings and photography.</p>
             </div>
@@ -102,7 +97,7 @@
             <!-- short about me display -->
             <div id="md1" class="md">
                 <h1>Multimedia <br> designer</h1>
-                <img src="img/me.jpg" alt="">
+                <img src="img/me.jpg" onclick="enlargeOrResetImg(this)">
                 <p><strong>Name:</strong> Anya Tandrup <br>
                 <strong>Birth:</strong> 14/08/2001</p>
             </div>
@@ -123,24 +118,24 @@
         </div>
          <div class="projects-display">           
             <div id="pd1" class="pd">
-                <h2>All</h2>
+                <a href="portfolio.html"><h2>Website</h2></a>
             </div>
 
             <div id="pd2" class="pd">
-                <h2>Photoshop</h2>
+                <a href="portfolio.html"><h2>Photoshop</h2></a>
             </div>
 
             <div id="pd3" class="pd">
-                <h2>Drawings</h2>
+                <a href="portfolio.html"><h2>Drawings</h2></a>
             </div>
 
             <div id="pd4" class="pd">
-                <h2>Photography</h2>
+                <a href="portfolio.html"><h2>Photography</h2></a>
             </div>
          </div>
          
         <!---------- SCROLLING BANNER ------------>
-        <marquee scrollamount="30">
+        <marquee scrollamount="20">
             Let's make wonders together
 
             <a href="mailto:anya.r.tandrup@gmail.com" method="get" target="_blank">Email me</a>
@@ -153,22 +148,18 @@
     
     <!---------- FOOTER ------------>
     <footer>
-        <div class="footbox-1">
-            <h2>art-portfolio</h2>
-        </div>
-
-        <div class="footbox-2">
+        <div class="footbox">
             <a href="https://www.linkedin.com/in/anya-rezanova-tandrup-421106150/" target="_blank">
-                <i class="fa fa-linkedin-square" style="font-size:50px"></i>
+                <i class="fa fa-linkedin-square"></i>
             </a>
             
-            <i class="fa fa-circle" style="font-size:15px"></i>
+            <i class="fa fa-circle"></i>
 
             <a href="https://www.instagram.com/anyart_5/" target="_blank">
-                <i class="fa fa-instagram" style="font-size:50px"></i>
+                <i class="fa fa-instagram"></i>
             </a>
 
-            <i class="fa fa-circle" style="font-size:15px"></i>
+            <i class="fa fa-circle"></i>
 
             <a href="https://www.fiverr.com/thenameisart?public_mode=true" target="_blank">
                 <img src="img/icons8-fiverr-48.png">

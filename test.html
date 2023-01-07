@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------- TAB TITLE ------->
+    <title>HOME ― art-portfolio</title>
+
+    <!------- LINKS ------->
+
+    <!-- CSS fil -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- JS library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>  
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@300;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    
+    
+    <!-- JS code -->
+    <script src="code.js"></script>
+</head>
+
+<body id="scroll-to-top">
+    <!-- Background texture -->
+    <div class="paperOverlay"></div>
+
+    <!---------- HEADER ------------>
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <a href="home.html"><img src="img/logo.png" alt="art logo"></a>
+        </div>
+
+        <div class="header-title">
+            <h1>My Online Portfolio</h1>
+            <h2>Copenhagen, DK</h2>
+        </div>
+
+        <!-- navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="about.html">about me</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="process.html">design process</a></li>
+            </ul>
+        </nav>
+
+        <!-- menu icon -->
+        <label id="menu">
+            <img src="img/down-arrow.png" alt="">
+        </label>
+    </header>
+
+    <div class="content">
+
+        <!---------- TOP DISPLAY CONTENT ------------>
+        <div class="top-projects">
+            
+            <div class="tabs">
+                <button class="tab-links" onclick="openPage(event, 'Study-projects')" id="defaultOpen">CphBusiness</button>
+                <body onload="document.getElementById('defaultOpen').click();"></body>
+
+                <button class="tab-links" onclick="openPage(event, 'Personal-projects')"
+                >Personal projects</button>
+            </div>
+
+            <div class="tab-content" id="Study-projects">
+                <h1>Copenhagen Business Academy</h1>
+                <p>
+                    At CphBusiness the semesters are divided into five flows, where the fith flow is the exam.
+                    <br>
+                    The first four flows surround different themes.
+                </p>
+                
+                <div class="sub-tabs-container">
+                    <label  for="sub-tab-1">Semester 1</label>
+                    <label for="sub-tab-2">Semester 2</label>
+                    <label for="sub-tab-3">Semester 3</label>
+                    <label for="sub-tab-4">Semester 4</label>
+                </div>     
+
+
+                <!-- 1. semester -->
+                <input class="tab-radio" id="sub-tab-1" name="sub-group" type="radio" checked="checked">
+                
+                <div class="sub-tab-content">
+                    <!-- Scroll to top button -->
+                    <button class="to-top-btn ">
+                        <a href="#scroll-to-top"><i style="font-size:36px" class="fa fa-chevron-circle-up"></i></a>
+                    </button>
+
+                    <!-- Scroll to specific flow -->
+                    <div class="sem1-links" >
+                        <a href="#scroll-to-top">Digital image processing and Adobe Photoshop</a>
+                        <a href="#scroll-sem1-flow2">Visual concept for digital and printed media</a>
+                        <a href="#scroll-sem1-flow3">Build your first website</a>
+                        <a href="#scroll-sem1-flow4">SoMe video production</a>
+                    </div>
+
+                    <!-- Flow 1 -->
+                    <h1>
+                        Flow 1: <br>
+                       <span class="notbold">Digital image processing and Adobe Photoshop</span>
+                    </h1>
+
+                    <p>
+                        Our very first assaignment was to walk around Copenhagen and take pictures. We where think of three words that characterizes us, and then take a picture of it. My words where: Creative, polarized (personality wise) and retro.
+                    </p>
+
+                    <div class="sem1-flow1-img">
+                        <div class="sem1-flow1-img1" onclick="enlargeOrResetImg(this)"><h2>Creative</h2></div>
+                        <div class="sem1-flow1-img2" onclick="enlargeOrResetImg(this)"><h2>Polarized</h2></div>
+                        <div class="sem1-flow1-img3" onclick="enlargeOrResetImg(this)"><h2>Retro</h2></div>
+                    </div>
+
+                    <p>
+                        With these three pictures we where assigned to process them in different ways in Adobe Photoshop. We needed to:
+                        <ul>
+                            <li>Remove an element</li>
+                            <li>Add an element</li>
+                            <li>Adjust the image's lighting conditions or give the image an atmosphere with filters or color tinting</li>
+                            <li>Cropping and possibly straightening (vertical/horizontal) the image</li>
+                            <li>Format and size: the image must be in 4:3 format and saved so that the size is ≦ 1 M pixels</li>
+                        </ul>
+                    </p>
+
+                    <p>After incoporating the requirements for the new pictures, this is what I ended up with:</p>
+
+                    <div class="sem1-flow1-img">
+                        <div class="sem1-flow1-img4" onclick="enlargeOrResetImg(this)"></div>
+                        <div class="sem1-flow1-img5" onclick="enlargeOrResetImg(this)"></div>
+                        <div class="sem1-flow1-img6" onclick="enlargeOrResetImg(this)"></div>
+                    </div>
+
+                    <p>
+                        Besides finding something that characterizes us, we also needed to take pictures of different gieven themes. The themes where: Love, nature, strong colors, reflection and movement. These where my representation of the themes:
+                    </p>
+
+                    <div class="sem1-flow1-img">
+                        <div class="sem1-flow1-img7" onclick="enlargeOrResetImg(this)"><h2>Love</h2></div>
+                        <div class="sem1-flow1-img8" onclick="enlargeOrResetImg(this)"><h2>Nature</h2></div>
+                        <div class="sem1-flow1-img9" onclick="enlargeOrResetImg(this)"><h2>Strong colors</h2></div>
+                        <div class="sem1-flow1-img10" onclick="enlargeOrResetImg(this)"><h2>Reflection</h2></div>
+                        <div class="sem1-flow1-img11" onclick="enlargeOrResetImg(this)"><h2>Movement</h2></div>
+                    </div>
+
+                    <p>
+                        We then were assigned a group project, where we had to make a website prototype about an event for new students in Copenhagen. The website should somehow contain these different themes.
+                    </p>
+
+                    <p>
+                        After some brainstorming, my group came up with an event for architecture students. We started my making some wireframes for our website: (most of the following documents will be written in danish, since I'm a danish student)
+                    </p>
+
+                    <div class="sem1-flow1-img">
+                        <div class="sem1-flow1-img12" onclick="enlargeOrResetImg(this)"></div>
+                        <div class="sem1-flow1-img13" onclick="enlargeOrResetImg(this)"></div>
+                        <div class="sem1-flow1-img14" onclick="enlargeOrResetImg(this)"></div>
+                        <div class="sem1-flow1-img15" onclick="enlargeOrResetImg(this)"></div>
+                    </div>
+
+                    <p>
+                        We then created a sitemap to show how the user can navigate around the website:
+                    </p>
+
+                    <div class="sem1-flow1-img">
+                        <div class="sem1-flow1-img16" onclick="enlargeOrResetImg(this)"></div>
+                    </div>
+
+                    <p>
+                        We could now start on creating the website. We came up with a lot of dirretent ideas, and ended up making a user survey. The survey contained these <a href="Bruger undersøgelse.pdf" target="_blank" type="application/pdf">questions</a>. (the survey is in danish)
+                    </p>
+
+                    <p>
+                        Unfortunately was the results of our survey was deleted, so I can therefore not show it.
+                    </p>
+
+                    <p>
+                        In the end, <a href="https://www.figma.com/file/ItfijSKOnE0btEBsz48ZsA/Figma-Prototype?node-id=0%3A1&t=J63MWzVkJM5pye5K-1" target="_blank">this</a> is what our website looked like.
+                    </p>
+
+                    <p>
+                        In this flow we also learned a bit about copyright. We had to make find an image we didn't own the copyright to and redo it in Adobe Photoshop. Heres my before and after pictures:
+                    </p>
+
+                    <div class="sem1-flow1-img" id="scroll-sem1-flow2">
+                        <div class="sem1-flow1-img17" onclick="enlargeOrResetImg(this)"></div>
+                        <div class="sem1-flow1-img18" onclick="enlargeOrResetImg(this)"></div>
+                    </div>
+                    
+
+
+                    <!-- Flow 2 -->
+                    <h1>
+                        Flow 2: <br>
+                       <span class="notbold">Visual concept for digital and printed media</span>
+                    </h1>
+
+                    <p>
+                        During the second flow we we were assaigned to create a new LP album design for a chosen artist. This assignment had to be done in groups. Besides making an album cover, we had to make a landing page for the album (figma prototype). 
+                    </p>
+
+                    <p>
+                        On the landing page it should be possible for people to buy the album. The landing page should also link to a spotify page were people could stream the album. Lastly we also had to design a banner for the artist.
+                    </p>
+
+                    <p>
+                        We started our preperation with a brainstorm followed by a mind map and a sitemap. In this flow we also learned about PBS (Product Breakdown Structure) and WBS (Work Breakdown Structure), so that we also included. The following things can be viewed <a href="https://app.mural.co/invitation/mural/test86651/1663747375705?sender=u3d6f34854b9b965ea03e2803&key=3cc89c88-82dd-4d31-8d02-17d2efedab35" target="_blank">here</a>.
+                    </p>
+
+                    <p>
+                        When all the preparation was in place, we could now start on our wireframes for our website:
+                    </p>
+
+                    <div class="sem1-flow2-img">
+                        <div class="sem1-flow2-img1" onclick="enlargeOrResetImg(this)"></div>
+                        <div class="sem1-flow2-img2" onclick="enlargeOrResetImg(this)"></div>
+                        <div class="sem1-flow2-img3" onclick="enlargeOrResetImg(this)"></div>
+                    </div>
+
+                    <p>
+                        For the design of the album cover, we had to work in Adobe Illustrator. My group also decided to make a design for the LP record. From the perspective of our mood board, our product ended up looking like this:
+                    </p>
+
+                    <div class="sem1-flow2-img" onclick="enlargeOrResetImg(this)">
+                        <h1>Album cover (front and back for the record)</h1>
+                        <div class="sem1-flow2-img4" onclick="enlargeOrResetImg(this)"></div>
+                        <h1>LP record design</h1>
+                        <div class="sem1-flow2-img5" onclick="enlargeOrResetImg(this)"></div>
+                        <h1>Banner</h1>
+                        <div class="sem1-flow2-img6" onclick="enlargeOrResetImg(this)"></div>
+                    </div>
+
+                    <p id="scroll-sem1-flow3">
+                        Our landing page can be viewed <a href="https://www.figma.com/file/Y75PNvWv7kQn1wm8cPf4MB/Landingpage---GFP?node-id=0%3A1&t=CZ7aXJ1BmbJsrFGm-1" target="_blank">here</a>.
+                    </p>
+
+
+                    <!-- Flow 3 -->
+                    <h1>
+                        Flow 3: <br>
+                       <span class="notbold">Build your first website</span>
+                    </h1>
+
+                    <p>
+                        The third flow was more of about learning and less about a specific project. We created a HTML-Sandbox and a CSS-Sandbox, containing different useful elements. Besides that, we also learned about:
+                        <ul>
+                            <li>Flexbox</li>
+                            <li>Buttons</li>
+                            <li>Different types of navigation</li>
+                            <li>Responsive design</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        During our website making practise I created my first real website during my study here. It ended up looking like <a href="https://art-portfolio.dk/The-amazing-blog/01-index.html" target="_blank">this</a>. (some of the pictures are currently missing)
+                    </p>
+
+                    <p id="scroll-sem1-flow4">
+                        We did have to make one project during this flow. We had to make a website for a candidate for the upcoming general election. I chose a guy named Alex Vanopslagh, and took inspiration from his party's website. I turned out like <a href="https://art-portfolio.dk/Online-valgkamp/01-main.html" target="_blank">this</a>.
+                    </p>
+
+
+                    <!-- Flow 4 -->
+                    <h1>
+                        Flow 4: <br>
+                       <span class="notbold">SoMe video production</span>
+                    </h1>
+
+                    <p>
+                        At the fourth flow we had to,in groups, creative 3 commersial videos for a business with circular economy. The videos should respectively be 30 seconds, 15 seconds and 5 seconds. We also had to make a landing page for the videoes. My group chose the clothing company ZARA.
+                    </p>
+
+                    <p>
+                        We started with a bit of research and some brainstorming, and when we were ready, we started planning the videoes. First we created a storyboard:
+                    </p>
+
+                    <div class="sem1-flow4-img">
+                        <div class="sem1-flow4-img1" onclick="enlargeOrResetImg(this)"></div>
+                        <div class="sem1-flow4-img2" onclick="enlargeOrResetImg(this)"></div>
+                    </div>
+
+                    <p>
+                        We then created a manuscript, for a more detailed version of the storyboard. And lastly we created a shot list:
+                    </p>
+
+                    <div class="sem1-flow4-img">
+                        <div class="sem1-flow4-img3" onclick="enlargeOrResetImg(this)"></div>
+                    </div>
+
+                    <p>
+                        We could now start filming and creating our landing page. It all turned out like so:
+                        <ol>
+                            <li><a href="https://art-portfolio.dk/SoMe-landingpage/main.html">Landing page</a></li>
+                            <li><a href="https://youtu.be/vs9arMPlSs0">30 sec video</a></li>
+                            <li><a href="https://youtu.be/kck8IsbKIUo">15 sec video</a></li>
+                            <li><a href="https://youtu.be/GV7vMDoedjA">5 sec video</a></li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Personal projects -->
+            <div class="tab-content" id="Personal-projects">
+                <!-- Scroll to top button -->
+                <button class="to-top-btn ">
+                    <a href="#scroll-to-top"><i style="font-size:36px" class="fa fa-chevron-circle-up"></i></a>
+                </button>
+                <!-- Scroll to specific drawing theme -->
+                <div class="personal-links">
+                    <a href="#scroll-to-top">Drawings</a>
+                    <a href="#scroll-paint">Paintings</a>
+                    <a href="#scroll-photo">Photography</a>
+                </div>
+
+                <h1>Drawings</h1>
+                <!-- Scroll to specific drawing theme -->
+                <div class="drawings-links" >
+                    <a href="#scroll-to-top">Drawings of anime and people</a>
+                    <a href="#scroll-draw-logo">Drawings of logos</a>
+                    <a href="#scroll-draw-tatto">Drawings of tattoo</a>
+                    <a href="#scroll-draw-other">Other drawings</a>
+                </div>
+                
+                <h2>Manga / anime and humans</h2>                
+
+                <div class="personal-img">
+                    <div class="drawngs-img1" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="drawngs-img2" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="drawngs-img3" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="drawngs-img4" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="drawngs-img5" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="drawngs-img6" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="drawngs-img7" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="drawngs-img8" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="drawngs-img9" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="drawngs-img10" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="drawngs-img11" onclick="enlargeOrResetImg(this)"></div>
+                    
+                    <div class="drawngs-img13" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="drawngs-img14" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="drawngs-img12" id="scroll-draw-logo" onclick="enlargeOrResetImg(this)"></div>
+                </div>
+
+                <h2>Logo design</h2>
+                <div class="personal-img">
+                    <div class="log-tat-img1" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="log-tat-img2" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="log-tat-img3" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="log-tat-img4" id="scroll-draw-tatto" onclick="enlargeOrResetImg(this)"></div>
+                </div>
+
+                <h2>Tattoo design</h2>
+                <div class="personal-img">
+                    <div class="log-tat-img5" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="log-tat-img6" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="log-tat-img7" id="scroll-draw-other" onclick="enlargeOrResetImg(this)"></div>
+                </div>
+
+                <h2>Other drawings</h2>
+                <div class="personal-img">
+                    <div class="other-img1" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="other-img2" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="other-img7" onclick="enlargeOrResetImg(this)"></div>
+
+                    <div class="other-img3" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="other-img8" onclick="enlargeOrResetImg(this)"></div>
+
+                    
+                    <div class="other-img5" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="other-img6" onclick="enlargeOrResetImg(this)"></div>
+
+                    <div class="other-img4" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="other-img9" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="other-img10" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="other-img11" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="other-img12" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="other-img13" id="scroll-paint" onclick="enlargeOrResetImg(this)"></div>
+                </div>
+
+                <h1>Paintings</h1>
+                <div class="personal-img">
+                    <div class="painting-img1" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="painting-img2" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="painting-img3" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="painting-img4" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="painting-img5" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="painting-img6" id="scroll-photo" onclick="enlargeOrResetImg(this)"></div>
+                </div>
+
+                <h1>Photography</h1>
+                <div class="personal-img">
+                    <div class="photo-img1" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="photo-img2" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="photo-img3" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="photo-img4" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="photo-img5" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="photo-img6" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="photo-img7" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="photo-img8" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="photo-img9" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="photo-img10" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="photo-img11" onclick="enlargeOrResetImg(this)"></div>
+                    <div class="photo-img12" onclick="enlargeOrResetImg(this)"></div>
+                </div>
+                
+            </div>
+        
+        </div>
+    </div>
+
+
+    <!---------- FOOTER ------------>
+    <footer>
+        <div class="footbox">
+            <a href="https://www.linkedin.com/in/anya-rezanova-tandrup-421106150/" target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+            
+            <i class="fa fa-circle"></i>
+
+            <a href="https://www.instagram.com/anyart_5/" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+
+            <i class="fa fa-circle"></i>
+
+            <a href="https://www.fiverr.com/thenameisart?public_mode=true" target="_blank">
+                <img src="img/icons8-fiverr-48.png">
+            </a>
+        </div>
+    </footer>
+    
+</body>
+
+
+</html>
