@@ -32,6 +32,24 @@ body {
     z-index: -1;
 }
 
+@media screen and (min-width:2000px) {
+    .paperOverlay {
+        background-image: url("../img/background.png");
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: repeat-y;
+        mix-blend-mode: multiply;
+        pointer-events: none;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -527,15 +545,13 @@ input[type=submit] {
 }
 
 /* --------------- PORTFOLIO PAGE ----------------- */
-.cphbusiness h1 
-{
+.cphbusiness h1 {
     font-size: 40px;
     margin-top: 20px;
     text-align: center;
 }
 
-.cphbusiness h2 
-{
+.cphbusiness h2 {
     font-size: 30px;
     margin-top: 20px;
     text-align: center;
@@ -548,8 +564,7 @@ input[type=submit] {
     padding: 8px;
 }
 
-.accordion 
-{
+.accordion {
     margin-top: 10px;
     background-color: #de5b6d;
     color: #000;
@@ -565,13 +580,11 @@ input[type=submit] {
     font-family: 'Yrsa', serif;
 }
   
-.active, .accordion:hover 
-{
+.active, .accordion:hover {
     background-color: #478ba2; 
 }
 
-.accordion:after 
-{
+.accordion:after {
     content: '\02795';
     font-size: 13px;
     color: #534666;
@@ -579,13 +592,11 @@ input[type=submit] {
     margin-left: 5px;
 }
   
-.active:after 
-{
+.active:after {
     content: "\2796";
 }
 
-.panel 
-{
+.panel {
     padding: 0 18px;
     display: none;
     background-color: white;
@@ -597,7 +608,140 @@ input[type=submit] {
 }
 
 .panel img {
-    padding: 10px;
-    height: 15vh;
-    margin: 0 5px;
+    width: 100%;
+    max-width: 300px;
+    margin: 5px 10px;
 }
+
+.modalContainer{
+    width: 200px;
+    display: flex;
+}
+
+.modalImg {
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.modalImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 10px; 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 100%;
+    max-width: 700px;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.5s;
+    animation-name: zoom;
+    animation-duration: .5s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* --------------- PROCESS PAGE ----------------- */
+.old-port {
+    background-color: #ffcbc89f;
+}
+
+.old-port img, .pre-work img {
+    width: 100%;
+    max-width: 300px;
+    margin: 5px 20px;
+}
+
+.port-header {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.old-port p, .pre-work p, .design-explained p {
+    margin: 0 20px;
+    padding: 15px 0;
+}
+
+.pre-work {
+    background-color: #ffcbc89f;
+}
+
+.new-port-img h2{
+    text-align: center;
+}
+
+.infoarchitecture {
+    width: 35vw;
+    height: 40vh;
+    margin-top: 30px;
+    background-image: url(../img/infoarkitektur.png);
+    background-position: center;
+    background-size: cover;
+    border: #000 1px solid;
+    border-radius: 2%;
+}
+
+.style-guide {
+    width: 45vw;
+    height: 40vh;
+    margin-top: 30px;
+    margin-left: 20px;
+    background-image: url(../img/style-guide.png);
+    background-position: center;
+    background-size: cover;
+    border: #000 1px solid;
+    border-radius: 2%;
+}
+
+.design-explained span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+

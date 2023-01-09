@@ -12,11 +12,8 @@
     <!------- LINKS ------->
 
     <!-- CSS fil -->
-    <link rel="stylesheet" href="styles/all.css">
-    <link rel="stylesheet" href="styles/phone(min-1080).css">
-    <link rel="stylesheet" href="styles/desktop(1500-2000).css">
-    <link rel="stylesheet" href="styles/desktop(2000-2200).css">
-    <link rel="stylesheet" href="styles/desktop(2200-2800).css">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/phone.css">
 
     <!-- JS library -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>  
@@ -31,8 +28,6 @@
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     
     
-    <!-- JS code -->
-    <script src="code.js"></script>
 </head>
 
 <body>
@@ -70,67 +65,97 @@
     <!------------ ALL CONTENT ------------>
     <div class="content">
         
+        <h1 class="port-header">Welcome to my design process &#128516;</h1>
         <div class="old-port">
-            <h1>Welcome to my design process &#128516;</h1>
-
             <p>
                 When I found out we had to make a portfolio website for our exam, I started right away. But at that time I han another idea in mind. I work a lot on this website. But when it got the time where we go the actual description of what the website should contain, I change my mind. I didn't like my old design any more, and I wanted something new. So I erased everything and started from scratch. These two wireframes are from my old design:
             </p>
-            <div class="old-port-img">
-                <div class="old-wireframe1" onclick="enlargeOrResetImg(this)"></div>
-                <div class="old-wireframe2" onclick="enlargeOrResetImg(this)"></div>
+
+            <div class="modalContainer">
+                <img src="img/old-wireframe1.jpg" onclick="onClick(this)" class="modalImg">
+
+                <img src="img/old-wireframe2.jpg" onclick="onClick(this)" class="modalImg">
             </div>
 
+            <div id="modal3" class="modal"      onclick="this.style.display='none'">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                  <img id="img3">
+                </div>
+            </div>
             
         </div>
+
+        <h1 class="port-header">Preperation</h1>
         <div class="pre-work">
-            <h1>Preperation</h1>
+            
             <p>
                 When I started to work on this portfolio page, the first thing I did was make a list of what the website should contain. Specificly what this page should contain according to the requrements for my exam. 
                 <br><br>
                 Since I decided to start from scratch with my website, I began to make a moodboard, so I could get some inspiration for how I should look like:
             </p>
 
-            <div class="moodboard-img">
-                <div class="mood-img" onclick="enlargeOrResetImg(this)"></div>
+            <div class="modalContainer">
+                <img src="div/moodboard.png" onclick="onClick(this)" class="modalImg">
             </div>
 
             <p>
                 Now that I had an idea of how my porfolio should like, I started drawing wireframes for my different pages:
             </p>
 
-            <div class="new-port-img">
-                <div class="new-wireframe1" onclick="enlargeOrResetImg(this)"><h2>Homepage</h2></div>
-                <div class="new-wireframe2" onclick="enlargeOrResetImg(this)"><h2>About me</h2></div>
-                <div class="new-wireframe3" onclick="enlargeOrResetImg(this)"><h2>Portfolio</h2></div>
-                <div class="new-wireframe4" onclick="enlargeOrResetImg(this)"><h2>Procss</h2></div>
+            <div class="modalContainer">
+                <img src="img/new-wireframe1.jpg" onclick="onClick(this)" class="modalImg">
+
+                <img src="img/new-wireframe2.jpg" onclick="onClick(this)" class="modalImg">
+            </div>
+
+            <div class="modalContainer">
+                <img src="img/new-wireframe3.jpg" onclick="onClick(this)" class="modalImg">
+
+                <img src="img/new-wireframe4.jpg" onclick="onClick(this)" class="modalImg">
+            </div>
+
+            <div id="modal4" class="modal"      onclick="this.style.display='none'">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                  <img id="img4">
+                </div>
             </div>
 
             <p>
-                As you may have noticed, the "about me" page and the "portfolio" page, look a bit different then I originally meant for it. The gid in the about me page was too complicated to get to fit right on multiple platforms (phone, desktop, etc.), so I ended up changeing it. My original idea for the portfolio page didn't turn out as I thought as soon as I started making it. I therefore got the idea with making tabs, so it was easier to navigate about.
+                As you may have noticed, the "about me" page and the "portfolio" page, look a bit different then I originally meant for it. The grid in the about me page was too complicated to get to fit right on multiple platforms (phone, desktop, etc.), so I ended up changeing it. My original idea for the portfolio page didn't turn out as I thought as soon as I started making it. I therefore got the idea with making tabs, so it was easier to navigate about.
             </p>
 
-            <h1>Project planning</h1>
+            <h1 class="port-header">Project planning</h1>
             <p>
                 During the entire project, I have timed each part, so to document how much it takes to make. All this is documented throught a PBS and WBS:
             </p>
 
-            <div class="project-planning-img">
-                <div class="pbs-img" onclick="enlargeOrResetImg(this)"></div>
-                <div class="wbs-img" onclick="enlargeOrResetImg(this)"></div>
+            <div class="modalContainer">
+                <img src="img/pbs-img.png" onclick="onClick(this)" class="modalImg">
+
+                <img src="img/wbs-img.png" onclick="onClick(this)" class="modalImg">
             </div>
 
             <p>
                 I could now create an information architecture and a style guide:
             </p>
 
-            <div class="project-planning-img">
-                <div class="infoarchitecture" onclick="enlargeOrResetImg(this)"></div>
-                <div class="style-guide" onclick="enlargeOrResetImg(this)"></div>
+            <div class="modalContainer">
+                <img src="img/infoarkitektur.png" onclick="onClick(this)" class="modalImg">
+
+                <img src="img/style-guide.png" onclick="onClick(this)" class="modalImg">
             </div>
 
+            <div id="modal5" class="modal"      onclick="this.style.display='none'">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                  <img id="img5">
+                </div>
+            </div>
+
+            <h1 class="port-header">Website design explained</h1>
             <div class="design-explained">
-                <h1>Website design explained</h1>
                 <p>
                     <span>Generally</span> <br>
 
@@ -173,28 +198,27 @@
 
     <!---------- FOOTER ------------>
     <footer>
-        <div class="footbox-1">
-            <h2>art-portfolio</h2>
-        </div>
-
-        <div class="footbox-2">
+        <div class="footbox">
             <a href="https://www.linkedin.com/in/anya-rezanova-tandrup-421106150/" target="_blank">
-                <i class="fa fa-linkedin-square" style="font-size:50px"></i>
+                <i class="fa fa-linkedin-square"></i>
             </a>
             
-            <i class="fa fa-circle" style="font-size:24px"></i>
+            <i class="fa fa-circle"></i>
 
             <a href="https://www.instagram.com/anyart_5/" target="_blank">
-                <i class="fa fa-instagram" style="font-size:50px"></i>
+                <i class="fa fa-instagram"></i>
             </a>
 
-            <i class="fa fa-circle" style="font-size:24px"></i>
+            <i class="fa fa-circle"></i>
 
             <a href="https://www.fiverr.com/thenameisart?public_mode=true" target="_blank">
-                <img src="/img/icons8-fiverr-48.png">
+                <img src="img/icons8-fiverr-48.png">
             </a>
         </div>
     </footer>
 </body>
+
+<!-- JS code -->
+<script src="code.js"></script>
 
 </html>

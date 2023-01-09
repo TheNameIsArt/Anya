@@ -12,7 +12,8 @@
     <!------- LINKS ------->
 
     <!-- CSS fil -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/phone.css">
 
     <!-- JS library -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>  
@@ -27,8 +28,7 @@
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     
     
-    <!-- JS code -->
-    <script src="code.js"></script>
+    
 </head>
 
 <body id="scroll-to-top">
@@ -79,38 +79,118 @@
             <p>
                 During this flow we work in Abode Photoshop, and got intodruced to Figma.
                 <br><br>
-                Here are some before and after pictures, I've done in Photoshop:
+                Here are my before and after pictures, that we had to do in Photoshop (click on image to enlarge):
             </p>
 
-            <img src="img/creative.jpg" alt="Picture1 before">
-            <img src="img/creative2.png" alt="Picture1 after">
+            <div class="modalContainer">
+                <img src="img/creative.jpg" onclick="onClick(this)" class="modalImg">
 
-            <img src="img/polarized.jpg" alt="Picture1 before">
-            <img src="img/polarized2.png" alt="Picture1 after">
+                <img src="img/creative2.png"  onclick="onClick(this)" class="modalImg">
+            </div>
 
-            <img src="img/retro.jpg" alt="Picture1 before">
-            <img src="img/retro2.png" alt="Picture1 after">
+            <div class="modalContainer">
+                <img src="img/polarized.jpg" onclick="onClick(this)" class="modalImg">
+
+                <img src="img/polarized2.png" onclick="onClick(this)" class="modalImg">
+            </div>
+
+            <div class="modalContainer">
+                <img src="img/retro.jpg" onclick="onClick(this)" class="modalImg">
+
+                <img src="img/retro2.png" onclick="onClick(this)" class="modalImg">
+            </div>
+            
 
             <p>
-                If you want to know more about these pictures, and what I did during this flow, you can <a href="#">here</a>.
+                In Figma we had to make a website prototype for an event in Copenhagen.
+                <br><br>
+                Here is a few examples of my groups website (click on image to enlarge):
             </p>
+
+            <div class="modalContainer">
+                <img src="img/flow1-figma1.png" onclick="onClick(this)" class="modalImg">
+
+                <img src="img/flow1-figma2.png" alt="Picture1 after" onclick="onClick(this)" class="modalImg">
+            </div>
+
+            <p>
+                If you want to see the entire website prototype, you can <a href="https://www.figma.com/file/ItfijSKOnE0btEBsz48ZsA/Figma-Prototype?node-id=0%3A1&t=J63MWzVkJM5pye5K-1" target="_blank">here</a>.
+            </p>
+
+            <p>
+                If you want to know more about what I did during this flow, you can <a href="Sem1-flow1.pdf" target="_blank">here</a>.
+            </p>
+
+            <div id="modal1" class="modal" onclick="this.style.display='none'">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                  <img id="img1">
+                </div>
+            </div>
         </div>
 
         <button class="accordion">Flow 2 - Visual concept for digital and printed media</button>
         <div class="panel">
             <p>
-
+                During this flow we work in Abode Illustrator, and learned about the process of working with a project.
+                <br><br>
+                We had to design an album cover for an lp, a banner and create a landing page in Figma. It turned ou like this (click on image to enlarge):
             </p>
+
+            <div class="modalContainer">
+                <img src="img/gfp1.png" onclick="onClick(this)" class="modalImg">
+
+                <img src="img/gfp2.png" alt="Picture1 after" onclick="onClick(this)" class="modalImg">
+            </div>
+
+            <div class="modalContainer">
+                <img src="img/gfp3.png" alt="Picture1 after" onclick="onClick(this)" class="modalImg">
+
+                <img src="img/gfp4.png" alt="Picture1 after" onclick="onClick(this)" class="modalImg">
+            </div>
+
+            <p>
+                If you want to see the entire website prototype, you can <a href="#">here</a>.
+            </p>
+
+            <p>
+                If you want to know more about what I did during this flow, you can <a href="Sem1-flow2.pdf" target="_blank">here</a>.
+            </p>
+
+            <div id="modal2" class="modal"      onclick="this.style.display='none'">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                  <img id="img2">
+                </div>
+            </div>
         </div>
 
         <button class="accordion">Flow 3 - Build your first website</button>
         <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>
+                At this flow we learned how to use HTML and CSS, to create real websites.
+                <br><br>
+                We had to make a website for candidate for the upcoming general election. I chose a guy named Alex Vanopslagh it turned out like <a href="https://art-portfolio.dk/Online-valgkamp/01-main.html" target="_blank">this</a>.
+            </p>
+
+            <p>
+                If you want to know more about what I did during this flow, you can <a href="#">here</a>.
+            </p>
+
         </div>
 
         <button class="accordion">Flow 4 - SoMe video production</button>
         <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>
+                At this flow we worked with Abode PremirePro, and learned about video production.
+                <br><br>
+                We had to create 3 short videos and make a website for a chosen company.  It all turned aout like <a href="https://art-portfolio.dk/SoMe-landingpage/main.html" target="_blank">this</a>.
+            </p>
+
+            <p>
+                If you want to know more about what I did during this flow, you can <a href="Sem1-flow4.pdf" target="_blank">here</a>.
+            </p>
+            
         </div>
 
         <div class="cphbusiness">
@@ -187,20 +267,7 @@
     
 </body>
 
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+<!-- JS code -->
+<script src="code.js"></script>
 
-    for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-        panel.style.display = "none";
-        } else {
-        panel.style.display = "block";
-        }
-    });
-    }
-</script>
 </html>
